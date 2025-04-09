@@ -1,0 +1,133 @@
+/* Custom Styles for Rams Solutions Website */
+
+/* General Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 600;
+}
+
+/* Hero Section */
+.hero-section {
+    padding: 6rem 0;
+    background-color: #f8f9fa;
+}
+
+/* Feature Icons */
+.feature-icon, 
+.value-icon, 
+.service-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: rgba(13, 110, 253, 0.1);
+    color: #0d6efd;
+}
+
+/* Card Hover Effect */
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    &:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    }
+}
+
+/* Button Styles */
+.btn-primary {
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+
+    &:hover {
+        background-color: #0b5ed7;
+        border-color: #0a58ca;
+    }
+}
+
+/* Navbar Styles */
+.navbar-brand {
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.nav-link {
+    font-weight: 500;
+
+    &.active {
+        font-weight: 600;
+    }
+}
+
+/* Footer Styles */
+footer {
+    & a {
+        text-decoration: none;
+        transition: color 0.3s ease;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+/* Social Media Icons */
+.btn-outline-primary.rounded-circle {
+    width: 40px;
+    height: 40px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+}
+
+/* Contact Form */
+.form-control {
+    &:focus {
+        border-color: #0d6efd;
+        box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+    }
+}
+
+/* Testimonial Cards */
+.card-text {
+    line-height: 1.6;
+}
+
+/* Service Pages */
+.list-group-item {
+    border: none;
+    padding-left: 0;
+}
+
+/* Map Container */
+.map-container {
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+
+.text-white {
+    text-decoration: none;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .hero-section {
+        padding: 4rem 0;
+    }
+    
+    h1.display-4 {
+        font-size: 2.5rem;
+    }
+
+    .btn-primary{
+        margin-bottom: 1.5rem;
+    }
+
+}
