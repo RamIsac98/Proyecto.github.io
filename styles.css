@@ -129,14 +129,26 @@ footer {
     width: 100%;
   }
 
-  #contenido-video-index, #contenido-video-index-2 {
+  /*edicion html 100 hasta 188*/
+  #contenido-video-index, #contenido-video-index-2, .contenido-imagenservipequeno-index, .contenido-imagenservipequeno-index-2 {
     margin-bottom: 5rem;
-
   }
+/*html 152 hasta 182*/
+  .contenido-imagenservipequeno-index-2 .img-contenido-img-index .img-serviciopequeno-2 {
+    height: 1000px;
+    border-radius: 10px;
+    object-fit: cover;
+    
+  }
+
+  
+
+
+
 
 
 @media (min-width: 1200px) {
-    #contenido-video-index, #contenido-video-index-2 {
+    #contenido-video-index, #contenido-video-index-2, .contenido-imagenservipequeno-index, .contenido-imagenservipequeno-index-2 {
     display: flex;
     flex-direction: row;
     gap: 2rem;
@@ -144,7 +156,7 @@ footer {
     justify-content: center;
 }
 
-#contenido-video-index-2 {
+#contenido-video-index-2, .contenido-imagenservipequeno-index-2 {
     flex-direction: row-reverse;
 }
 }
@@ -169,5 +181,19 @@ footer {
         margin-bottom: 2rem;
     }
     
+    .contenido-imagenservipequeno-index .img-contenido-img-index .img-serviciopequeno, .contenido-imagenservipequeno-index-2 .img-contenido-img-index .img-serviciopequeno-2 {
+        margin-top: 1rem;
+        display: block;
+        max-width: 100%;
+        
     
+    }
+
+    .contenido-imagenservipequeno-index-2 .img-contenido-img-index .img-serviciopequeno-2 {
+        height: 900px;
+      }
+
+      .img-serviciopequeno-2 {
+        width: 100%;
+      }
 }
